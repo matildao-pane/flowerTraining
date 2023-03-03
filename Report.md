@@ -139,12 +139,6 @@ From the confusion matrix we can see that the number of true positive for the di
 
 -----
 
-<strong>How would you share your findings with the client? </strong>
-
-I would create a presentation showing the metrics and the improvements that can be done to the architecture.
-
------
-
 <strong>What would your comments be to a colleague building the app, regarding the model?  </strong>
 
 If the app is for a mobile phone, it is necessary to build a lighweight architecture which could run in real time and that takes less memory as possible for performances reasons. Some existing models can be usefull but are trained to recognize much more objects than the ones we require and some of them are very complex. 
@@ -156,8 +150,3 @@ Take in consideration to infer on cloud. Locate the model in a server accesible 
 To avoid network overloading some preprocessing could be made on the device and then send the data in a lighter format to the server.
 I would also consider finding a more populated dataset with more images per classes to let the model face more samples.
 
------
-
-<strong>The amount of time you have spent on this task (we hope you will be able to spend around 4 hours on the task, but feel free to spend the amount you see fit, just let us know what it was): </strong> 
- 
-I spent around 8 hours spreaded in 2 days.
