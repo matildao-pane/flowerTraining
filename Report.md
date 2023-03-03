@@ -29,7 +29,7 @@ Because of the time limit and the dimension of the dataset I decided to train a 
 
 The architecture of the network is the following:
 
-![](img/first.png)
+![](/img/first.png)
 
 This architecture is simple and not very complex but takes inspiration from the structure of the most famous and performing ones like AlexNet and VGG16.
 The number of parameters is much less than the VGG networks (approx 140 millions).
