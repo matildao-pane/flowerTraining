@@ -75,7 +75,7 @@ Since this is a multiclass problem I used the SOFTMAX as activation function to 
 
 ## First training results
  
-![](/img/plot1.png)
+![](/img/plot1.PNG)
 
 A result good as this one at the first attempt is suspicious. 
  
@@ -92,7 +92,7 @@ To overcome this, I applied two of the most used techniques to resolve overfitti
 
 I added a Dropout layer and a RandomFlip and RandomRotaion layers at the beginning of the architecture.
 
-![](/img/ok.png)
+![](/img/ok.PNG)
 
 ### Dropout
 Adding a dropout regularization layer improved the generalization capacity of the model.
