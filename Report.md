@@ -29,7 +29,7 @@ Because of the time limit and the dimension of the dataset I decided to train a 
 
 The architecture of the network is the following:
 
-![](first.png)
+![](img/first.png)
 
 This architecture is simple and not very complex but takes inspiration from the structure of the most famous and performing ones like AlexNet and VGG16.
 The number of parameters is much less than the VGG networks (approx 140 millions).
@@ -75,7 +75,7 @@ Since this is a multiclass problem I used the SOFTMAX as activation function to 
 
 ## First training results
  
-![](plot1.png)
+![](img/plot1.png)
 
 A result good as this one at the first attempt is suspicious. 
  
@@ -92,12 +92,12 @@ To overcome this, I applied two of the most used techniques to resolve overfitti
 
 I added a Dropout layer and a RandomFlip and RandomRotaion layers at the beginning of the architecture.
 
-![](ok.png)
+![](img/ok.png)
 
 ### Dropout
 Adding a dropout regularization layer improved the generalization capacity of the model.
 
-![](plot2.PNG)
+![](img/plot2.PNG)
 
 Dropout | Data aug | Epochs | Opt |Train Loss | Val Loss | Train Acc | Val Acc | TEST ACC
 --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -111,7 +111,7 @@ I added 2 layers of data augmentation to increase the number of the samples seen
 I applied RandomFlip and RandomRotation which are techniques used to randomly flip the images horizontally or vertically and randomly rotate the images by a certain angle during training. 
 This helps the model to learn invariance to image orientation and can also increase the size of the training data.  
  
-![](plot3.PNG)
+![](img/plot3.PNG)
 
 Dropout | Data aug | Epochs | Opt |Train Loss | Val Loss | Train Acc | Val Acc | TEST ACC
 --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -123,7 +123,7 @@ The final metrics are calculated over the test set, a set that the network never
 
 Plot of the training history using Adam opt:
 
-![](plotadam.PNG)
+![](img/plotadam.PNG)
 
 Dropout | Data aug | Epochs | Opt |Train Loss | Val Loss | Train Acc | Val Acc | TEST ACC
 --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -135,7 +135,7 @@ The training with the RMSprop optimizer is very noisy and lead to worse results,
 
 From the confusion matrix we can see that the number of true positive for the different 17 classes are higher in the diagonal that the ones outside the diagonal. 
 
-![](report.PNG)
+![](img/report.PNG)
 
 -----
 
